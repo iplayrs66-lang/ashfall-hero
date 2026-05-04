@@ -1,18 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-  <title>EMBERVEIL: Rise of the Ashbound</title>
-  <link rel="stylesheet" href="style.css"/>
+<meta charset="UTF-8">
+<title>Survivor 3D</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div id="root">
-    <div id="game-wrapper">
-      <div id="game"></div>
-    </div>
+
+<div id="ui">
+  <div id="top-bar">
+    <span id="level">LEVEL 1</span>
+    <span id="score">SCORE 0</span>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/phaser@3.80.1/dist/phaser.min.js"></script>
-  <script src="game.js"></script>
+
+  <div id="xp-bar">
+    <div id="xp-fill"></div>
+  </div>
+
+  <div id="menu">
+    <h1>SURVIVOR 3D</h1>
+    <button id="startBtn">TAP TO START</button>
+  </div>
+
+  <div id="gameOver" class="hidden">
+    <h1>GAME OVER</h1>
+    <button onclick="location.reload()">RESTART</button>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+<script src="game.js"></script>
+
 </body>
 </html>
